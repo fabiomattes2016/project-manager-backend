@@ -4,6 +4,7 @@
 import express from 'express';
 
 import Logger from './lib/Logger';
+import './database';
 
 const app = express();
 
