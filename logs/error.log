@@ -1,0 +1,25 @@
+2021-02-19 19:24:42:2442 [31merror[39m: [31minvalid expiresIn option for string payload[39m
+2021-02-19 19:27:02:272 [31merror[39m: [31mCredenciais inválidas[39m
+2021-02-19 19:27:26:2726 [31merror[39m: [31mCredenciais inválidas[39m
+2021-02-19 19:28:12:2812 [31merror[39m: [31mCredenciais invalidas[39m
+2021-02-19 19:30:03:303 [31merror[39m: [31mCredenciais inválidas[39m
+2021-02-19 19:32:41:3241 [31merror[39m: [31mUsuário inativo[39m
+2021-02-19 19:47:28:4728 [31merror[39m: [31mUsuário inativo[39m
+2021-02-19 20:00:39:039 [31merror[39m: [31mUsuário não encontrado[39m
+2021-02-20 18:54:39:5439 [31merror[39m: [31mnull value in column "code" violates not-null constraint[39m
+2021-02-20 18:57:32:5732 [31merror[39m: [31mduplicate key value violates unique constraint "UQ_97672ac88f789774dd47f7c8be3"[39m
+2021-02-20 19:08:04:84 [31merror[39m: [31mCliente já cadastrado[39m
+2021-02-20 19:08:13:813 [31merror[39m: [31mUsuário já cadastrado[39m
+2021-02-20 19:24:53:2453 [31merror[39m: [31mCliente não encontrado[39m
+2021-02-20 19:27:33:2733 [31merror[39m: [31mEmail já se encontra em uso[39m
+2021-02-20 20:12:24:1224 [31merror[39m: [31mEste email já se encontra em uso[39m
+2021-02-20 20:13:40:1340 [31merror[39m: [31mEste email já se encontra em uso[39m
+2021-02-20 20:16:31:1631 [31merror[39m: [31mEste email já se encontra em uso[39m
+2021-02-20 20:16:42:1642 [31merror[39m: [31mEste email já se encontra em uso[39m
+2021-02-20 20:17:09:179 [31merror[39m: [31mEste email já se encontra em uso[39m
+2021-02-20 20:17:45:1745 [31merror[39m: [31mEste email já se encontra em uso[39m
+2021-02-20 20:18:08:188 [31merror[39m: [31mEste email já se encontra em uso[39m
+2021-02-20 20:18:17:1817 [31merror[39m: [31mEste email já se encontra em uso[39m
+2021-02-20 20:24:58:2458 [31merror[39m: [31mEste email já se encontra em uso[39m
+2021-02-20 20:54:27:5427 [31merror[39m: [31mCliente não encontrado[39m
+2021-02-20 20:56:28:5628 [31merror[39m: [31mCliente não encontrado[39m

@@ -2,12 +2,13 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  Generated,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity('users')
-class User {
+@Entity('clients')
+class Client {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -18,10 +19,14 @@ class User {
   email: string;
 
   @Column()
-  password: string;
+  phone: string;
 
   @Column()
-  active: boolean;
+  cpf: string;
+
+  @Column()
+  @Generated('uuid')
+  code: string;
 
   @CreateDateColumn()
   created_at: Date;
@@ -30,4 +35,4 @@ class User {
   updated_at: Date;
 }
 
-export default User;
+export default Client;
