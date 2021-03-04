@@ -26,7 +26,7 @@ class SessionService {
     const user = await this.userRepository.findByEmail(email);
 
     if (!user) {
-      throw new AppError('Credenciais invalidas', 401);
+      throw new AppError('Credenciais inválidas', 401);
     }
 
     const passwordCompare = await compare(password, user.password);
@@ -39,11 +39,15 @@ class SessionService {
       throw new AppError('Usuário inativo', 401);
     }
 
-    const token = sign({}, process.env.APP_SECRET as string, {
-      expiresIn: '1d',
+    const token = sign({
+      userId: user.id,
+      sessionDate: new Date()
+    }, process.env.APP_SECRET as string, {
+      expiresIn: '1d'
     });
 
     delete user.password;
+    delete user.active;
 
     return { token, user };
   }

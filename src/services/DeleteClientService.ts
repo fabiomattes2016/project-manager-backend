@@ -1,6 +1,5 @@
 import AppError from '../errors/AppError';
 import IClientRepository from '../Interfaces/IClientRepository';
-import Client from '../models/Client';
 import ClientRepository from '../repositories/ClientRepository';
 
 class DeleteClientService {

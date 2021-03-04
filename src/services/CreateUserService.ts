@@ -20,7 +20,7 @@ class CreateUserService {
   public async execute({ name, email, password }: Request): Promise<User> {
     const passwordHash = await hash(password, 8);
 
-    const userVerify = this.userRepository.findByEmail(email);
+    const userVerify = await this.userRepository.findByEmail(email);
 
     if (userVerify) {
       throw new AppError('Usuário já cadastrado', 302);

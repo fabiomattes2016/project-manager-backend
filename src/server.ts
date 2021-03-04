@@ -1,7 +1,8 @@
 import 'reflect-metadata';
 import './config/env';
 import 'express-async-errors';
-import express, { NextFunction, Request, Response } from 'express';
+import cors from 'cors';
+import express, { NextFunction, request, Request, Response } from 'express';
 
 import Logger from './lib/Logger';
 import './database';
@@ -10,12 +11,14 @@ import AppError from './errors/AppError';
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
 app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
   if (err instanceof AppError) {
     Logger.error(err);
+    Logger.error(`Client connected: ${request.connection.remoteAddress}`);
 
     return response
       .status(err.statusCode)
